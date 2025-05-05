@@ -1,0 +1,30 @@
+{
+  "name": "documenator",
+  "version": "1.0.0",
+  "description": "Automatic API documentation generator and tester",
+  "main": "dist/index.js",
+  "bin": {
+    "documenator": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "api",
+    "documentation",
+    "swagger",
+    "openapi",
+    "express",
+    "nestjs",
+    "fastify",
+    "testing"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
